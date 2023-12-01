@@ -1,0 +1,7 @@
+{
+    "@@locale": "it",
+    "receiveAudioAppBarTitle": "Condividi audio",
+    "@receiveAudioAppBarTitle": {
+        "description": "Testo mostrato nella pagina per ricevere file audio condivisi"
+    }
+}

@@ -1,7 +1,7 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
+    "receiveAudioAppBarTitle": "Receive Audio",
+    "@receiveAudioAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
     }
 }
