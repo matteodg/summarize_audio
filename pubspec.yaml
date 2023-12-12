@@ -15,7 +15,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.18.1
-  share_handler: ^0.0.19
+  share_handler: ^0.0.20
   video_player: ^2.8.1
 
 dev_dependencies:
