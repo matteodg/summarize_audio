@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:fpdart/fpdart.dart' hide State;
 import 'package:share_handler/share_handler.dart';
 import 'package:summarize_audio/l10n/l10n.dart';
 import 'package:video_player/video_player.dart';
@@ -37,12 +38,16 @@ class _ReceiveAudioViewState extends State<ReceiveAudioView> {
     media = await handler.getInitialSharedMedia();
 
     handler.sharedMediaStream.listen((SharedMedia media) {
-      if (!mounted) return;
+      if (!mounted) {
+        return;
+      }
       setState(() {
         this.media = media;
       });
     });
-    if (!mounted) return;
+    if (!mounted) {
+      return;
+    }
 
     setState(() {
       // _platformVersion = platformVersion;
@@ -57,14 +62,15 @@ class _ReceiveAudioViewState extends State<ReceiveAudioView> {
       body: Center(
         child: ListView(
           padding: const EdgeInsets.all(16),
-          children: (media?.attachments ?? []).map(
-            (attachment) {
-              if (attachment == null) {
-                return const Column(children: [Text('Attachment not available')]);
-              }
-              return attachment.getWidget();
-            },
-          ).toList(),
+          children: (media?.attachments ?? [])
+              .map(
+                (attachment) => Option.of(attachment) //
+                    .map((attachment) => attachment!.getWidget())
+                    .getOrElse(() => const Column(
+                          children: [Text('Attachment not available')],
+                        )),
+              )
+              .toList(),
         ),
       ),
     );
