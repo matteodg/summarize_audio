@@ -1,4 +1,4 @@
-name: summarizeaudio
+name: summarize_audio
 
 concurrency:
   group: $-$

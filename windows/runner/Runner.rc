@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.matteodigiovinazzo.summarizeaudio" "\0"
-            VALUE "FileDescription", "summarizeaudio" "\0"
+            VALUE "CompanyName", "com.matteodigiovinazzo.summarize_audio" "\0"
+            VALUE "FileDescription", "summarize_audio" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "summarizeaudio" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.matteodigiovinazzo.summarizeaudio. All rights reserved." "\0"
-            VALUE "OriginalFilename", "summarizeaudio.exe" "\0"
-            VALUE "ProductName", "Summarizeaudio" "\0"
+            VALUE "InternalName", "summarize_audio" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2022 com.matteodigiovinazzo.summarize_audio. All rights reserved." "\0"
+            VALUE "OriginalFilename", "summarize_audio.exe" "\0"
+            VALUE "ProductName", "Summarize Audio" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

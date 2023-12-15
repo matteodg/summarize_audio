@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:summarizeaudio/counter/counter.dart';
-import 'package:summarizeaudio/l10n/l10n.dart';
+import 'package:summarize_audio/counter/counter.dart';
+import 'package:summarize_audio/l10n/l10n.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

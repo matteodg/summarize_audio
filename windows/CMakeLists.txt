@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(summarizeaudio LANGUAGES CXX)
+project(summarize_audio LANGUAGES CXX)
 
-set(BINARY_NAME "summarizeaudio")
+set(BINARY_NAME "summarize_audio")
 
 cmake_policy(SET CMP0063 NEW)
 

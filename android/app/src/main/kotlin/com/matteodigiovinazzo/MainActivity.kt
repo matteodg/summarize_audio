@@ -1,4 +1,4 @@
-package com.matteodigiovinazzo.summarizeaudio
+package com.matteodigiovinazzo.summarize_audio
 
 import io.flutter.embedding.android.FlutterActivity
 

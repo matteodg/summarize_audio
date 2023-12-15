@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:summarizeaudio/app/app.dart';
-import 'package:summarizeaudio/counter/counter.dart';
+import 'package:summarize_audio/app/app.dart';
+import 'package:summarize_audio/counter/counter.dart';
 
 void main() {
   group('App', () {
